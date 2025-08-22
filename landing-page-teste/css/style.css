@@ -16,3 +16,9 @@ header, footer {
     text-align: center;
     background-color: #f2f2f2;
 }
+
+.hero {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
