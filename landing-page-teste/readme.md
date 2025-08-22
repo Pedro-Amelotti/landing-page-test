@@ -11,4 +11,4 @@ Projeto de teste para desenvolvimento de páginas conforme desafio.
 ## 🔧 Como rodar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/<seu-usuario>/landing-page-test.git
+   git clone https://github.com/pedro-amelotti/landing-page-test.git
