@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     
+    <!-- Seção Obrigatória -->
     <!-- video player -->
     <link
       rel="preload"
-      href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js"
+      href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
       as="script"
     />
     <link
       rel="preload"
-      href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
+      href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js"
       as="script"
     />
     <link
@@ -35,36 +36,12 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
+       
   </head>
 
   <body>
     <div class="PG-VSL">
       <div class="div">
-
-        <div class="garantia">
-          <div class="overlap-group">
-            <div class="ellipse"></div>
-            <img class="KIT" src="assets/png/kit-02-garantia.png" />
-          </div>
-          <div class="frame-4">
-            <div class="div-2">
-              <div class="descri-o">Guarantee</div>
-              <p class="titulo">100% Satisfaction 60-Day money back guarantee</p>
-              <p class="p">
-                Your order today is covered by our iron-clad 60-day 100% money-back guarantee. If you are not impressed
-                with the results, then at any time in the next 60 days write to us and we’ll refund every single cent
-              </p>
-            </div>
-            <button class="button">
-              <img
-                class="shopping-cart-icon"
-                src="assets/svg/carrinho-compras.svg"
-                />
-                <div class="order-now">ORDER NOW</div>
-              </button>
-            </div>
-          </div>
-
           <div class="overlap-wrapper">
             <div class="overlap">
               <div class="mask-group">
@@ -85,10 +62,10 @@
                       z-index: 0;
                     "
                   >
-                    <img
-                    class="thumbnail-image"
-                    src="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/thumbnail.jpg"
-                    style="
+                  <img
+                  class="thumbnail-image"
+                  src="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/thumbnail.jpg"
+                  style="
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -100,6 +77,14 @@
                     />
                   </div>
                 </vturb-smartplayer>
+
+                <!-- esse código está causando carregamento fora de ordem -->
+                <!-- <script type="text/javascript">
+                  var s=document.createElement("script");
+                  s.src="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js";
+                  s.async=true;
+                  document.head.appendChild(s);
+                </script> -->
               </div>
               <div class="frame-7">
                 <div class="frame-8">
@@ -117,14 +102,18 @@
             <img class="img" src="assets/png/grid.png" />
           </div>
         </div>
-        <div class="preco">
+        
+        <!-- manter footer aqui para ele não ter interferencia com o [data-delay] -->
+        
+        <div data-delay>
+          <div class="preco">
           <div class="frame-9">
             <div class="frame-10">
               <div class="text-wrapper-5">SPECIAL OFFER FOR YOU!</div>
               <p class="text-wrapper-6">Take advantage, limited time promotion!</p>
             </div>
             <div class="frame-11">
-              <div class="KIT-2">
+              <div class="KIT-2 mobile-3">
                 <img class="frasco" src="assets/png/frasco-1.png" />
                 <div class="frame-12">
                   <div class="frame-13"><div class="element-bottle">1 BOTTLE</div></div>
@@ -156,7 +145,7 @@
                 </div>
                 <div class="div-wrapper"><div class="text-wrapper-14">GOOD VALUE</div></div>
               </div>
-              <div class="KIT-3">
+              <div class="KIT-3 mobile-1">
                 <div class="frame-12">
                   <div class="frame-17"><div class="element-bottle">6 BOTTLE</div></div>
                 </div>
@@ -196,10 +185,9 @@
                       <img class="line-2" src="assets/svg/linha-vermelha.svg" />
                     </div>
                   </div>
-                  <img class="pck-cards" src="assets/png/botao-carrinho.png" />
                 </div>
               </div>
-              <div class="KIT-5">
+              <div class="KIT-5 mobile-2">
                 <div class="frame-12">
                   <div class="frame-13"><div class="element-bottle">3 BOTTLE</div></div>
                 </div>
@@ -254,68 +242,78 @@
           </div>
         </div>
 
-        <div class="FAQ">
-          <div class="frame-27">
-            <div class="frame-28">
-              <div class="text-wrapper-20">FAQ</div>
-              <div class="text-wrapper-21">Frequently Asked Questions</div>
+          <div class="garantia">
+              <div class="overlap-group">
+                  <div class="ellipse"></div>
+                  <img class="KIT" src="assets/png/kit-02-garantia.png" />
+              </div>
+              <div class="frame-4">
+                <div class="div-2">
+                  <div class="descricao">Guarantee</div>
+                  <p class="titulo">100% Satisfaction 60-Day money back guarantee</p>
+                  <p class="p">
+                      Your order today is covered by our iron-clad 60-day 100% money-back guarantee. If you are not impressed
+                      with the results, then at any time in the next 60 days write to us and we’ll refund every single cent
+                  </p>
+                  </div>
+                  <button class="button">
+                  <img
+                      class="shopping-cart-icon"
+                      src="assets/svg/carrinho-compras.svg"
+                      />
+                      <div class="order-now">ORDER NOW</div>
+                  </button>
+                  </div>
+              </div>
+
+          <div class="FAQ">
+            <div class="frame-27">
+              <div class="frame-28">
+                <div class="text-wrapper-20">FAQ</div>
+                <div class="text-wrapper-21">Frequently Asked Questions</div>
+              </div>
+
+              <div class="div-2">
+                <div class="faq-item">
+                    <div class="item"> <div class="text-wrapper-22">What is Blinzador?</div>
+                        <img class="angulo-pequeno faq-arrow" src="assets/svg/angulo-pequeno-direito.svg" />
+                    </div>
+                    <div class="faq-answer"> <p>Texto de exemplo para a resposta. O Blinzador é um produto antifúngico...</p>
+                    </div>
+                </div>
+              
+                <div class="faq-item">
+                    <div class="item">
+                        <div class="text-wrapper-22">How does it work?</div>
+                        <img class="angulo-pequeno faq-arrow" src="assets/svg/angulo-pequeno-direito.svg" />
+                    </div>
+                    <div class="faq-answer">
+                        <p>Texto de exemplo para a segunda resposta...</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="item">
+                        <div class="text-wrapper-22">Is it safe?</div>
+                        <img class="angulo-pequeno faq-arrow" src="assets/svg/angulo-pequeno-direito.svg" />
+                    </div>
+                    <div class="faq-answer">
+                        <p>Texto de exemplo para a terceira resposta...</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="div-2">
-              <div class="item">
-                <div class="text-wrapper-22">What is Blinzador?</div>
+            <div class="button-wrapper">
+              <button class="button">
                 <img
-                class="angulo-pequeno"
-                src="assets/svg/angulo-pequeno-direito.svg"
+                class="shopping-cart-icon"
+                src="assets/svg/carrinho-compras.svg"
                 />
-              </div>
-
-              <div class="item">
-                <div class="text-wrapper-22">What is Blinzador?</div>
-                <img
-                class="angulo-pequeno"
-                src="assets/svg/angulo-pequeno-direito.svg"
-                />
-              </div>
-
-              <div class="item">
-                <div class="text-wrapper-22">What is Blinzador?</div>
-                <img
-                class="angulo-pequeno"
-                src="assets/svg/angulo-pequeno-direito.svg"
-                />
-              </div>
-
-              <div class="item">
-                <div class="text-wrapper-22">What is Blinzador?</div>
-                <img
-                class="angulo-pequeno"
-                src="assets/svg/angulo-pequeno-direito.svg"
-                />
-              </div>
-
-              <div class="item">
-                <div class="text-wrapper-22">What is Blinzador?</div>
-                <img
-                class="angulo-pequeno"
-                src="assets/svg/angulo-pequeno-direito.svg"
-                />
-              </div>
+                <div class="order-now">ORDER NOW</div>
+              </button>
             </div>
           </div>
-
-          <div class="button-wrapper">
-            <button class="button">
-              <img
-              class="shopping-cart-icon"
-              src="assets/svg/carrinho-compras.svg"
-              />
-              <div class="order-now">ORDER NOW</div>
-            </button>
-          </div>
-        </div>
       </div>
-
       <footer class="footer">
         <div class="frame">
           <div class="frame-2">
@@ -343,5 +341,245 @@
         </div>
       </footer>
     </div>
+</div>
+
+    <script>
+  // HEAD GUARD: Put this as first script in <head>
+  if (typeof customElements !== "undefined") {
+    const __origDefine = customElements.define.bind(customElements);
+    customElements.define = function (name, constructor, options) {
+      // First try direct define
+      try {
+        return __origDefine(name, constructor, options);
+      } catch (err) {
+        // If element exists, just return silently
+        if (customElements.get(name)) {
+          console.warn(`Custom element ${name} already defined, skipping`);
+          return;
+        }
+        throw err; // Re-throw other errors
+      }
+    };
+  }
+</script>
+
+  <script>
+  const SMARTPLAYER_URL = "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js";
+  const PLAYER_URL = "https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/6827adf6562de3934a876ad4/v4/player.js";
+
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    if (!window.__loadedScripts) window.__loadedScripts = new Set();
+
+    // DO NOT treat <link rel="preload" as="script"> as "already loaded"
+    // Preload does not execute JS, so we must still insert the script tag.
+
+    if (window.__loadedScripts.has(src) || document.querySelector(`script[src="${src}"]`)) {
+      console.log("Script already loaded/skipped:", src);
+      return resolve();
+    }
+
+    const s = document.createElement("script");
+    s.src = src;
+    s.async = false;
+    s.onload = () => { window.__loadedScripts.add(src); resolve(); };
+    s.onerror = (ev) => {
+      console.warn("Script load error:", src, ev);
+      // resolve to allow page to continue (we handle missing API defensively)
+      resolve();
+    };
+    document.body.appendChild(s);
+  });
+
+  (async () => {
+    console.log("Loading player scripts (defensive)...");
+    try {
+      await loadScript(SMARTPLAYER_URL);
+    } catch (e) {
+      console.warn("Error loading smartplayer core:", e);
+    }
+
+    // If the custom element used by the player is already defined, skip loading player.js to avoid duplicate registration
+    try {
+      const bezelAlreadyDefined =
+        typeof customElements !== "undefined" &&
+        !!customElements.get &&
+        customElements.get("vturb-bezel");
+
+      if (bezelAlreadyDefined) {
+        console.log("vturb-bezel already defined — loading player.js while skipping duplicate define.");
+        // Safely load player.js while preventing duplicate customElements.define for 'vturb-bezel'
+        if (typeof customElements !== "undefined" && typeof customElements.define === "function") {
+          const originalDefine = customElements.define.bind(customElements);
+          try {
+            // Temporarily wrap customElements.define so duplicate registration errors are caught
+            if (typeof customElements !== "undefined" && typeof customElements.define === "function") {
+              const originalDefine = customElements.define.bind(customElements);
+              customElements.define = function (name, constructor, options) {
+                try {
+                  return originalDefine(name, constructor, options);
+                } catch (err) {
+                  // Ignore duplicate-definition errors (NotSupportedError / "already been used")
+                  if (err && (err.name === "NotSupportedError" || /already been used/i.test(err.message))) {
+                    console.warn("Ignored duplicate custom element define for", name);
+                    return;
+                  }
+                  throw err;
+                }
+              };
+
+              try {
+                await loadScript(PLAYER_URL);
+              } catch (e) {
+                console.warn("Error loading player.js:", e);
+              } finally {
+                // restore original define in all cases
+                try { customElements.define = originalDefine; } catch (_) {}
+              }
+            } else {
+              // no customElements.define available — just load the script
+              try {
+                await loadScript(PLAYER_URL);
+              } catch (e) {
+                console.warn("Error loading player.js:", e);
+              }
+            }
+          } catch (e) {
+            console.warn("Error checking customElements:", e);
+            try { await loadScript(PLAYER_URL); } catch (_) {}
+          }
+        } else {
+          try {
+            await loadScript(PLAYER_URL);
+          } catch (e) {
+            console.warn("Error loading player.js:", e);
+          }
+        }
+      } else {
+        try {
+          await loadScript(PLAYER_URL);
+        } catch (e) {
+          console.warn("Error loading player.js:", e);
+        }
+      }
+    } catch (e) {
+      console.warn("Error checking customElements:", e);
+      // last resort
+      try { await loadScript(PLAYER_URL); } catch(_) {}
+    }
+
+    // --- mostraElementos (fixed) ---
+    // helper: reveal [data-delay] using the CSS .is-visible animation
+    function revealDelayed() {
+      document.querySelectorAll('[data-delay]').forEach(el => {
+        el.classList.add('is-visible');
+      });
+    }
+    window.revealDelayed = revealDelayed; // ensure global access if any code calls it
+
+    function mostraElementos(playerInstance) {
+      const delayedEls = document.querySelectorAll('[data-delay]');
+      console.log("Found [data-delay] elements:", delayedEls);
+
+      // Get pitchTime from player config (it's in milliseconds)
+      const config = playerInstance?.config;
+      console.log("Player config:", config);
+      
+      if (!config?.pitchTime) {
+        console.warn("No pitchTime found in config");
+        return; // Let tryMostrar retry handle this
+      }
+
+      // pitchTime is already in milliseconds, don't multiply by 1000
+      console.log("Setting timeout for", config.pitchTime, "milliseconds");
+      setTimeout(() => {
+        console.log("Showing [data-delay] elements at pitchTime");
+        // previously: delayedEls.forEach(el => el.style.setProperty('display', 'block', 'important'));
+        revealDelayed();
+      }, config.pitchTime); // Remove the * 1000
+    }
+
+    // --- tryMostrar (fixed with retries) ---
+    const tryMostrar = () => {
+      const player = document.querySelector("vturb-smartplayer");
+      console.log("tryMostrar: player found?", !!player, player);
+      
+      if (!player) {
+        setTimeout(tryMostrar, 500);
+        return;
+      }
+
+      // Check if player is fully initialized
+      if (player.config?.pitchTime) {
+        console.log("Player already initialized, showing elements");
+        mostraElementos(player);
+        return;
+      }
+
+      let retries = 0;
+      const maxRetries = 10;
+      const retryInterval = 1000; // 1 second
+
+      const checkPlayerReady = () => {
+        console.log("Checking player state:", {
+          config: player.config,
+          hasStore: !!player.store
+        });
+
+        if (player.config?.pitchTime) {
+          console.log("Player initialized, showing elements");
+          mostraElementos(player);
+        } else if (retries < maxRetries) {
+          retries++;
+          console.log(`Player not ready, retry ${retries}/${maxRetries}`);
+          setTimeout(checkPlayerReady, retryInterval);
+        } else {
+          console.warn("Player failed to initialize after max retries");
+          // Force show elements after max retries
+          // use the helper so animation runs
+          revealDelayed();
+        }
+      };
+
+      // Listen for ready event AND start checking
+      player.addEventListener("player:ready", () => {
+        console.log("player:ready fired, starting checks");
+        checkPlayerReady();
+      }, { once: true });
+
+      // Also start checking immediately in case event already fired
+      checkPlayerReady();
+    };
+
+    // Start watching for player
+    tryMostrar();
+
+    // --- FAQ accordion (unchanged but defensive) ---
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.item');
+      const answer = item.querySelector('.faq-answer');
+      const arrow = item.querySelector('.faq-arrow');
+
+      if (!question || !answer) return;
+      question.addEventListener('click', () => {
+        const isActive = answer.classList.contains('active');
+
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+          ans.classList.remove('active');
+          ans.style.maxHeight = null;
+        });
+
+        document.querySelectorAll('.faq-arrow').forEach(arr => {
+          arr.classList.remove('rotated'); 
+        });
+
+        if (!isActive) {
+          answer.classList.add('active');
+          arrow?.classList.add('rotated');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
   </body>
 </html>
