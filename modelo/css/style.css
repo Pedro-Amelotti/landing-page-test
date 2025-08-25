@@ -1,3 +1,13 @@
+[data-delay] {
+    display: none; /* keep original behaviour: hidden by default */
+  }
+  
+  /* Reveal animation — keep existing animation name */
+  [data-delay].is-visible {
+    display: block;
+    animation: fadeSlideDown 700ms cubic-bezier(.2,.9,.2,1) both;
+  }
+
 .PG-VSL {
   background-color: #ffffff;
   display: grid;
@@ -156,7 +166,7 @@
   flex: 0 0 auto;
 }
 
-.PG-VSL .descri-o {
+.PG-VSL .descricao {
   position: relative;
   width: fit-content;
   margin-top: -1px;
