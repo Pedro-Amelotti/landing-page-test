@@ -9,6 +9,9 @@ body {
   margin: 0px;
   height: 100%;
   overflow-x: hidden; /* prevent lateral roll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
